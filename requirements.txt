@@ -1,8 +1,8 @@
-Django>=4.2,<5.0
-djangorestframework==3.12.4
-openai==2.2.0
-python-dotenv==1.0.1
-requests==2.32.4
+Django==4.2.27
 gunicorn
 whitenoise
-Unicode
+python-dotenv
+djangorestframework
+openai
+Unidecode
+
