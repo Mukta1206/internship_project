@@ -15,7 +15,7 @@ from pathlib import Path
 import os
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = BASE_DIR, "staticfiles
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-5+jvyk8qppeumzsqn1$p8-7sm6p2+b0y4#tn*!+xjw@tf2x20%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
