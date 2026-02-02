@@ -41,7 +41,11 @@ SECRET_KEY = 'django-insecure-5+jvyk8qppeumzsqn1$p8-7sm6p2+b0y4#tn*!+xjw@tf2x20%
 DEBUG = False
 
 
-ALLOWED_HOSTS = ["internship-project-oan9.onrender.com"]
+ALLOWED_HOSTS = ["internship-project-oan9.onrender.com",".onrender.com",]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://internship-project-oan9.onrender.com',
+]
 
 
 # Application definition
@@ -95,7 +99,7 @@ WSGI_APPLICATION = 'internship_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': '/tmp/db.sqlite3',
     }
 }
 
